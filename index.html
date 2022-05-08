@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>Snake</title>
+</head>
+<body>
+  <h1>Snake</h1>
+  <div class="back">
+    <p>Score:<span id="score"></span></p>
+  </div>
+
+  <div class='screen'>
+    <div id='border'>
+      
+    </div>
+  </div>
+
+ 
+  <map name="buttonReset">
+    <area shape="poly" href="/index.html" coords="6,14,38,10,83,2,140,1,199,2,210,0,230,3,375,25,250,100,170,100,150,90,100,80,70,70,40,60,0,30" alt="Button reset">
+  </map>
+  <div id="buttonReset">
+    <img class="img" usemap="#buttonReset" src="/img/Button.png" alt="Button reset" width="360">
+  </div>
+
+  <!-- Respons mobile -->
+  <map name="buttonResetRespons">
+    <area shape="poly" coords="0,15,74,4,146,0,219,8,250,15,230,43,200,52,170,60,130,60,100,60,70,60,30,43,10,30" href="/index.html" alt="Button reset">
+  </map>
+  <div id="buttonResetRespons">
+    <img class="imgRespons" usemap="#buttonResetRespons" src="/img/Button.png" alt="Button reset" width="250">
+  </div>
+
+  <div class="contentArrow">
+    <img id="arrowUp" src="https://img.icons8.com/emoji/96/000000/up-arrow-emoji.png"/>
+    <img id="arrowDown" src="https://img.icons8.com/emoji/96/000000/up-arrow-emoji.png"/>
+    <img id="arrowLeft" src="https://img.icons8.com/emoji/96/000000/left-arrow-emoji.png"/>
+    <img id="arrowRight" src="https://img.icons8.com/emoji/96/000000/left-arrow-emoji.png"/>
+  </div>
+  <!------>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
