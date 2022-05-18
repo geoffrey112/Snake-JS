@@ -301,7 +301,6 @@ class Snake{
 
   bonus(){
     let chance = Math.floor(Math.random() * 6);
-    console.log(chance);
 
     if(chance === 0){
       this.foodBonus = document.createElement('div');
@@ -398,11 +397,12 @@ class Snake{
     this.border.append(msgGameOverEffetBottom);
     this.border.append(msgReset);
     this.border.append(animArrow);
-    this.msgTimer.remove();
-    this.foodBonus.remove();
+    // this.msgTimer.remove();
+    // this.foodBonus.remove();
     this.speed = 0;
 
     window.cancelAnimationFrame(this.animation);
+    console.log("ok");
   }
 
   reset(){
